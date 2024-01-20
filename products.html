@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" />
+    <meta
+      name="description"
+      />
+    <meta
+      name="keywords"
+      />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico&family=Roboto&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/3318035e44.js"></script>
+    <link rel="icon" href="img/camera-logo-16.png" type="image/png" />
+    <title>Regional Clothes</title>
+  </head>
+  <body onload="displayProducts()">
+   
+    <nav class="nav-container">
+     
+      <ul class="nav-web">
+        <li>
+          <a href="index.html" id="logo" title="Home"
+            ><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li><a href="products.html">Login/SignUP</a></li>
+        <li><a href="products.html">Clothes</a></li>
+        <li><a href="#">Rajsthani</a></li>
+        <li><a href="#">Gujrati</a></li>
+        <li><a href="#">Tamil</a></li>
+        <li><a href="#">Himachali</a></li>
+        <li><a href="#">Kashmiri</a></li>
+        <li><a href="#">Asaamese</a></li>
+        <li><a href="#">Brands</a></li>
+        <li><a href="#">Special</a></li>
+      </ul>
+      <div class="nav-mobile">
+        <a href="index.html" id="logo" title="Home"
+          ><i class="fa-solid fa-house"></i></a>
+        <div id="myLinks">
+          <a href="products.html">Login/SignUP</a>
+          <a href="products.html">Clothes</a>
+          <a href="#">Rajasthani</a>
+          <a href="#">Gujrati</a>
+          <a href="#">Tamil</a>
+          <a href="#">Himachali</a>
+          <a href="#">Kashmiri</a>
+          <a href="#">Brands</a>
+          <a href="#">Special</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+    <main>
+     
+      <header class="header">
+        <h1 class="company-name">Regional Clothes</h1>
+        <div class="header-spans">
+          <span class="search"
+            ><i class="fas fa-search"></i
+            ><input
+              type="search"
+              id="search-input"
+              name="search"
+              placeholder="Search"
+          /></span>
+          <span class="user-wrapper">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-user"></i>
+            <a href="shopping-cart.html"
+              ><i class="fa-solid fa-cart-shopping" value="2"></i
+            ></a>
+          </span>
+        </div>
+      </header>
+      <section class="products-section">
+        
+        <div class="products-container" id="products"></div>
+      </section>
+    </main>
+   
+    <footer>
+      <div class="footer-menu">
+        <nav class="footer-nav-column">
+          <ul class="footer-nav-container">
+            <li class="li-title">SHOP</li>
+            <li><a href="#">Clothes</a></li>
+            <li><a href="#">Rajasthani</a></li>
+            <li><a href="#">Gujrati</a></li>
+            <li><a href="#">Tamil</a></li>
+            <li><a href="#">Asamese</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Special</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-column">
+          <ul class="footer-nav-container">
+            <li class="li-title">COMPANY INFO</li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our stores</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-column">
+          <ul class="footer-nav-container">
+            <li class="li-title">SHOPPING INFO</li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy and Security</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-column subscribe">
+          <ul class="footer-nav-container">
+            <li class="li-title">SUBSCRIBE</li>
+            <p>
+              Free delivery on your first order!!
+            </p>
+            <span class="email"
+              ><input
+                type="email"
+                id="subscribe-input"
+                name="email"
+                placeholder="Email"
+              /><button id="subscribe-btn">Subscribe</button></span
+            >
+          </ul>
+        </nav>
+      </div>
+     
+      <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.youtube.com/" target="_blank"
+          ><i class="fab fa-youtube-square"></i
+        ></a>
+        <a href="https://www.pinterest.com/" target="_blank"
+          ><i class="fab fa-pinterest-square"></i
+        ></a>
+      </div>
+      <div class="lang-pay">
+       
+        <div class="language">
+          <i class="fa-solid fa-globe" title="Choose language"></i>
+        </div>
+       
+        <div class="paying-methods">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+        
+        </div>
+      </div>
+      <p class="copyright">Copyright &copy; 2024 | Regional Clothes</p>
+    </footer>
+  </body>
+</html>
